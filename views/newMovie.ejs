@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/show.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+    <h1 style="color:brown">Enter the new Movie details  </h1>
+    <form action="/movie" method="post">
+        <div>
+        <label for="title">Enter the title of the movie</label>
+        <input type="text" placeholder="enter the Title of the movie" id="title" name="title">
+    </div>
+    <br>
+    <div>
+        <label for="year">Enter the movie release year </label>
+        <input type="number" placeholder="enter the year" id="year" name="year_released">
+    </div>
+    <br>
+    <div>
+        <label for="title">Enter the language of the movie</label>
+        <input type="text" placeholder="enter the language" id="lang" name="language">
+    </div>
+    <br>
+    <div>
+        <label for="rating">rating</label>
+        <input type="range" placeholder="enter the rating" min="1"  max="10" step="1" id="rating" name="rating">
+    </div>
+    <br>
+    <button>add movie</button>
+    </form>
+</div>
+</body>
+</html>

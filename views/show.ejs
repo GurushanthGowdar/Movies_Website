@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/show.css">
+    <title>Perticular</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="text">
+    <h1>title - <%= r.title %></h1>
+    <h3>year - <%= r.year_released%></h3>
+    <h3>lang-<%= r.language%></h3>
+    <h3>rating-<%= r.rating%></h3>
+    <button><a href="/movie">movies list</a></button>
+    
+    <button><a href="/movie/<%=r._id%>/edit ">edit</a></button>
+    <br>
+    <br>
+    
+    <form action="/movie/<%=r._id%>/delete?_method=DELETE" method="post">
+        <button >Delete</button>
+    
+    </form>
+</div >
+    <!-- <div class="image" ><img src="https://tse2.mm.bing.net/th?id=OIF.wWG7ri19%2f3u6s0xvXbIgUg&pid=Api&P=0&w=167&h=125" width="200px" alt="movie image">
+    </div>
+     -->
+</div>
+</body>
+</html>

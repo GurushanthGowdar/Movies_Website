@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/movie.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+    <h1>Movies List </h1>
+    <ul>  
+        <% for( movies of movie_all) { %>
+       <li> title :<%= movies.title %> Year-of-release:<%= movies.year_released %> language:<%= movies.language %> ratng:<%= movies.rating %> <a href="/movie/<%= movies._id %> ">details</a></li> 
+            <br> 
+       <% } %>
+       </ul>
+       <button ><a href="/movie/new">add Movie</a></button>
+        
+    </div>
+
+       </body>
+
+
+</html>
